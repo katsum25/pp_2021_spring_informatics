@@ -11,7 +11,7 @@ TEST(Quick_Sort_Operations, Test_manual_vector) {
     std::sort(vec_stan.begin(), vec_stan.end());
     ASSERT_EQ(vec_V, vec_stan);
 }
-/*TEST(Quick_Sort_Operations, Test_random_vector_0) {
+TEST(Quick_Sort_Operations, Test_random_vector_0) {
     std::vector<int> vec = getRandomVector(0);
     std::vector<int> vec_V = quickSortV(vec);
     std::vector<int> vec_stan = vec;
@@ -24,7 +24,7 @@ TEST(Quick_Sort_Operations, Test_random_vector_1) {
     std::vector<int> vec_stan = vec;
     std::sort(vec_stan.begin(), vec_stan.end());
     ASSERT_EQ(vec_V, vec_stan);
-}*/
+}
 TEST(Quick_Sort_Operations, Test_sorted_vector) {
     std::vector<int> vec = getRandomVector(42211);
     std::sort(vec.begin(), vec.end());
