@@ -72,8 +72,8 @@ TEST(Quick_Sort_Operations, Test_random_vector_1283_2) {
     ASSERT_EQ(vec_V, vec_stan);
 }
 
-TEST(Quick_Sort_Operations, Test_random_vector_40000_4) {
-    std::vector<int> vec = getRandomVector(40000);
+TEST(Quick_Sort_Operations, Test_random_vector_10000_4) {
+    std::vector<int> vec = getRandomVector(10000);
     std::vector<int> vec_V = parallel_sorting(vec, 4);
     std::vector<int> vec_stan = vec;
     std::sort(vec_stan.begin(), vec_stan.end());
