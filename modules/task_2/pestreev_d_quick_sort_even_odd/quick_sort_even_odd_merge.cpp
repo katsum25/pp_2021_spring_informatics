@@ -110,6 +110,7 @@ void recur_merge(const std::vector<int>& left, const std::vector<int>& right) {
     recur_merge(left_even, right_even);
 
     std::vector<int> res;
+
     for (int i = 0; i < leftsize; i++) {
         res.push_back(left[i]);
     }
