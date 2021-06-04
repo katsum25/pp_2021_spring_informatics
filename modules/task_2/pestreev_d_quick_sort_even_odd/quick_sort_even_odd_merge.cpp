@@ -132,6 +132,7 @@ void networking(const std::vector<int>& arr) {
 
     std::vector<int> l(arr.begin(), arr.begin() + arr_size / 2);
     std::vector<int> r(arr.begin() + arr_size / 2, arr.begin() + arr_size);
+
     networking(l);
     networking(r);
     recur_merge(l, r);
